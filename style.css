@@ -51,6 +51,12 @@ header h1 {
     color: white;
 }
 
+.container {
+    width: 85%;
+    margin: auto;
+    align-self: auto;
+}
+
 /* Sections */
 section {
     padding: 60px 0;
@@ -67,13 +73,14 @@ section.show {
 .container {
     width: 85%;
     margin: auto;
+    align-self: auto;
 }
 
 /* Section Titles */
 h2 {
     margin-bottom: 25px;
     font-weight: 600;
-    color: #0f172a;
+    color:#0f172a;
     position: relative;
 }
 
