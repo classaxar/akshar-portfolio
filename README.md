@@ -16,9 +16,6 @@ A modern, interactive, and fully responsive personal portfolio website built to 
 - **Interactivity:** Vanilla JavaScript (ES6+)
 - **Icons & Typography:** FontAwesome & Google Fonts (Space Grotesk, Inter)
 
-## 🌐 Live Demo
-*(Will add the link here once hosted on GitHub Pages or Vercel)*
-
 ## 📫 How to reach me
 - **Email:** classaxar@gmail.com
 - **LinkedIn:** [Modi Akshar](https://www.linkedin.com/in/akshar-modi-099429395)
