@@ -1,4 +1,4 @@
-# Akshar Vishal Modi - Personal Portfolio 👨‍💻
+#  Modi Akshar Vishal - Personal Portfolio 👨‍💻
 
 A modern, interactive, and fully responsive personal portfolio website built to showcase my skills, projects, and academic journey in **Data Science** and **Artificial Intelligence**.
 
@@ -21,4 +21,4 @@ A modern, interactive, and fully responsive personal portfolio website built to 
 
 ## 📫 How to reach me
 - **Email:** classaxar@gmail.com
-- **LinkedIn:** [Akshar Modi](https://www.linkedin.com/in/akshar-modi-099429395)
+- **LinkedIn:** [Modi Akshar](https://www.linkedin.com/in/akshar-modi-099429395)
