@@ -1,217 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modi Akshar Vishal | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>MODI AKSHAR VISHAL</h1>
-        <p>Gujarat, India</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;Akshar /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-        <p>
-            <a href="mailto:classaxar@gmail.com">classaxar@gmail.com</a> |
-            <a href="tel:+919408006867">+91-9408006867</a>
-        </p>
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <!-- Floating Animated Background Elements -->
+        <div class="blob shape1"></div>
+        <div class="blob shape2"></div>
 
-        <p>
-            <a href="https://www.linkedin.com/in/akshar-modi-099429395" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a> 
-        </p>
+        <div class="hero-content">
+            <p class="greeting">Hi, I am</p>
+            <h1 class="name"> Modi Akshar Vishal</h1>
+            <h2 class="title">Aspiring <span id="typing-text"></span><span class="cursor">|</span></h2>
+            <p class="summary">
+                I build intelligent systems, analyze complex data, and love solving real-world computing problems.
+                Based in Gujarat, India.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=classaxar@gmail.com" target="_blank"
+                    class="btn btn-outline">Let's Connect</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/akshar-modi-099429395" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/classaxar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=classaxar@gmail.com" target="_blank"
+                    title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>
+                        I am a Computer Science undergraduate with a profound passion for <strong>Data Science</strong>
+                        and <strong>Artificial Intelligence</strong>.
+                        I thrive on taking complex, unstructured data and turning it into actionable, predictable
+                        insights using computational thinking.
+                    </p>
+                    <p>
+                        Beyond traditional programming, my focus leans heavily into data-driven research, statistical
+                        reasoning, and intelligent system architectures.
+                        I actively explore Large Language Models (LLMs), prompt engineering, and building AI-assisted
+                        pipelines that drive workflow automation and optimization.
+                    </p>
+                    <p>
+                        My long-term ambition is to establish a career as a dedicated researcher and architect in AI and
+                        Data Science. Right now, I am actively seeking <strong>Summer Internship</strong> opportunities
+                        to apply my skills to real-world backend and AI challenges.
+                    </p>
+                </div>
+
+                <div class="travel-card glass-card">
+                    <div class="travel-icon"><i class="fas fa-globe-americas"></i></div>
+                    <h3>Global Perspective</h3>
+                    <p>
+                        I've visited the United States on three separate occasions. These experiences have significantly
+                        broadened my
+                        understanding of international environments, cross-cultural communication, and the global
+                        technological ecosystem,
+                        giving me a highly adaptable perspective on problem-solving.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests & Skills Section -->
+    <section id="interests" class="interests section-padding bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Research & Technical Focus</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Interest Card 1 -->
+                <div class="skill-card glass-card">
+                    <div class="icon-wrap"><i class="fas fa-chart-network"></i></div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Statistical modeling, data-driven decision making, pattern recognition, and robust computational
+                        analysis.</p>
+                </div>
+
+                <!-- Interest Card 2 -->
+                <div class="skill-card glass-card">
+                    <div class="icon-wrap"><i class="fas fa-brain"></i></div>
+                    <h3>Machine Learning & AI</h3>
+                    <p>Supervised and unsupervised learning, intelligent automation, predictive modeling, and AI system
+                        engineering.</p>
+                </div>
+
+                <!-- Interest Card 3 -->
+                <div class="skill-card glass-card">
+                    <div class="icon-wrap"><i class="fas fa-robot"></i></div>
+                    <h3>Large Language Models (LLMs)</h3>
+                    <p>Structured prompt engineering, understanding model reasoning behavior, and orchestrating
+                        AI-assisted workflows.</p>
+                </div>
+
+                <!-- Interest Card 4 -->
+                <div class="skill-card glass-card">
+                    <div class="icon-wrap"><i class="fas fa-server"></i></div>
+                    <h3>Scalable System Design</h3>
+                    <p>Designing backend architectures capable of efficiently handling structured data pipelines and
+                        heavy automation.</p>
+                </div>
+            </div>
+
+            <!-- Tech Stack Tags -->
+            <div class="tech-stack glass-card">
+                <h3>Technical Arsenal</h3>
+                <div class="tags">
+                    <span class="tag"><i class="fab fa-python"></i> Python</span>
+                    <span class="tag"><i class="fas fa-c"></i> C / C++</span>
+                    <span class="tag"><i class="fab fa-java"></i> Java</span>
+                    <span class="tag"><i class="fab fa-php"></i> PHP</span>
+                    <span class="tag"><i class="fab fa-js"></i> JavaScript</span>
+                    <span class="tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                    <span class="tag"><i class="fas fa-database"></i> SQL</span>
+                    <span class="tag"><i class="fab fa-android"></i> Android Programming</span>
+                    <span class="tag"><i class="fab fa-linux"></i> Linux OS</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Matplotlib</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="education section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education & Credentials</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="edu-grid">
+                <!-- Timeline -->
+                <div class="timeline glass-card">
+                    <h3>Academic Journey</h3>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Expected 2028</div>
+                        <div class="timeline-content">
+                            <h4>B.Tech Computer Science & Eng.</h4>
+                            <h5>Institute of Computer & Technology, Ganpat University</h5>
+                            <p>Pursuing via Lateral Entry.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Diploma Completed</div>
+                        <div class="timeline-content">
+                            <h4>Diploma in Information Technology</h4>
+                            <h5>B S Patel Polytechnic, Ganpat University</h5>
+                            <p>Graduated with an outstanding CGPA of 7.87 / 10.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">SSC Completed</div>
+                        <div class="timeline-content">
+                            <h4>Secondary School Certificate</h4>
+                            <h5>Sabari Vidya Vihar</h5>
+                            <p>Scored 58% in standard assessments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certs -->
+                <div class="certs glass-card">
+                    <h3>Professional Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-item">
+                            <div class="cert-img-wrapper">
+                                <img src="assets/IBM Python For Data Science Certificate_page-0001.jpg"
+                                    alt="IBM Python Data Science" title="Placeholder: Replace with real cert">
+                            </div>
+                            <p>IBM – Python for Data Science</p>
+                        </div>
+
+                        <div class="cert-item">
+                            <div class="cert-img-wrapper">
+                                <img src="assets/Cisco Data Science Essentials with Python.jpg"
+                                    alt="Cisco Data Science Essentials" title="Placeholder: Replace with real cert">
+                            </div>
+                            <p>Cisco – Data Science Essentials w/ Python</p>
+                        </div>
+
+                        <div class="cert-item">
+                            <div class="cert-img-wrapper">
+                                <img src="assets/JP Morgan chase & Co. Software Engineering Job Simulation.jpg"
+                                    alt="JP Morgan Software Eng" title="Placeholder: Replace with real cert">
+                            </div>
+                            <p>JP Morgan – Software Engineering Simulation</p>
+                        </div>
+
+                        <div class="cert-item">
+                            <div class="cert-img-wrapper">
+                                <img src="assets/Junior Software Developer.jpg" alt="Android Development"
+                                    title="Placeholder: Replace with real cert">
+                            </div>
+                            <p>Android Development Training</p>
+                        </div>
+
+                        <div class="cert-item">
+                            <div class="cert-img-wrapper">
+                                <img src="assets/certificate.png" alt="NPTEL Python Data Science"
+                                    title="Placeholder: Replace with real cert">
+                            </div>
+                            <p>NPTEL – Python for Data Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects & Experience -->
+    <section id="projects" class="projects section-padding bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experience & Projects</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Experience Card -->
+                <div class="project-card glass-card">
+                    <div class="card-badge exp-badge">Experience</div>
+                    <h3> ગુજરાત Vibrant Management</h3>
+                    <h4 class="company">Gujarat Forest Department</h4>
+                    <p>
+                        Assisted the regional government department in structured digital coordination, establishing
+                        reliable documentation workflows,
+                        and optimizing operational data management processes for improved administrative efficiency.
+                    </p>
+                </div>
+
+                <!-- Project Card -->
+                <div class="project-card glass-card">
+                    <div class="card-badge proj-badge">Data Science Project</div>
+                    <h3>Forest Cover & CO₂ Emissions Analysis</h3>
+                    <p>
+                        Performed deep exploratory time-series analysis on multi-decade environmental data using Python
+                        (Pandas/NumPy/Matplotlib).
+                        Applied normalization, moving averages, and correlation analyses to evaluate long-term
+                        sustainability trends and identify
+                        spurious time-based relationships in ecological data.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/classaxar/india-forest-co2-analysis.git" target="_blank"
+                            class="btn btn-sm btn-outline"><i class="fab fa-github"></i> View Resource</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Portfolio -->
+    <section id="creative" class="creative section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Creative Endeavors</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="creative-content glass-card layout-flex">
+                <div class="creative-text">
+                    <p>
+                        Alongside my technical and analytical pursuits, I maintain a carefully curated photography
+                        portfolio.
+                        My lens focuses heavily on nature, architectural geometry, and urban environments.
+                        Photography serves as my creative outlet—it strengthens my visual observation skills, sharpens
+                        my attention to detail,
+                        and offers a different perspective on how systems and shapes interact in the real world.
+                    </p>
+                    <div class="creative-links">
+                        <a href="https://www.instagram.com/earthly_exposures_9408" target="_blank"
+                            class="btn btn-instagram"><i class="fab fa-instagram"></i> Instagram Portfolio</a>
+                        <a href="https://vs.co/zjkhzjuk" target="_blank" class="btn btn-vsco"><i
+                                class="fas fa-camera-retro"></i> VSCO Collection</a>
+                    </div>
+                </div>
+                <!-- Visual Decoration for photography -->
+                <div class="creative-visual">
+                    <i class="fas fa-camera-retro huge-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="contact-box glass-card">
+                <h2>Ready to collaborate?</h2>
+                <p>I am currently available for summer internships and open-source collaborations in AI and Data
+                    Science.</p>
+                <div class="contact-methods">
+                    <div class="c-method">
+                        <i class="fas fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=classaxar@gmail.com"
+                            target="_blank">classaxar@gmail.com</a>
+                    </div>
+                    <div class="c-method">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+919408006867">+91-9408006867</a>
+                    </div>
+                    <div class="c-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gujarat, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Modi Akshar Vishal. Designed with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div class="modal-caption">
+            <a id="modal-download" href="#" download class="btn btn-primary btn-sm"><i class="fas fa-download"></i>
+                Download Certificate</a>
+        </div>
     </div>
-</header>
 
-<section>
-    <div class="container">
-        <h2>About Me</h2>
-
-        <p>
-            I am a Computer Science undergraduate with a strong academic
-            interest in Data Science and Artificial Intelligence.
-            I enjoy working with structured data, extracting insights,
-            and applying computational thinking to solve real-world problems.
-        </p>
-
-        <p>
-            My focus lies in data-driven research, statistical reasoning,
-            and intelligent systems. I actively explore Large Language Models (LLMs),
-            structured prompt engineering, and AI-assisted workflows.
-        </p>
-
-        <p>
-            My long-term goal is to become an enthusiastic researcher
-            in Data Science and AI-driven system design.
-        </p>
-
-        <p>
-            Currently seeking Summer Internship opportunities in Data Science,
-            AI, and backend system development.
-        </p>
-
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Research Interests</h2>
-
-        <ul>
-            <li>
-                <strong>Data Science & Analytics:</strong>
-                Statistical modeling, data-driven decision making,
-                pattern recognition, and computational data analysis.
-            </li>
-
-            <li>
-                <strong>Machine Learning & AI Systems:</strong>
-                Supervised and unsupervised learning concepts,
-                intelligent automation, and predictive modeling.
-            </li>
-
-            <li>
-                <strong>Large Language Models (LLMs):</strong>
-                Prompt engineering, model reasoning behavior,
-                and AI-assisted workflow optimization.
-            </li>
-
-            <li>
-                <strong>Scalable System Design:</strong>
-                Designing backend systems capable of handling
-                structured data pipelines and automation.
-            </li>
-
-        </ul>
-
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>International Exposure</h2>
-
-        <p>
-            Visited the United States on three occasions, gaining exposure to
-            diverse cultures, international environments, and global perspectives.
-            These experiences strengthened my adaptability, cross-cultural
-            communication skills, and broadened my understanding of global
-            technological and academic ecosystems.
-        </p>
-
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>B.Tech CSE (Ongoing)</strong> – 
-                Institute of Computer & Technology, Ganpat University <br>
-                (Lateral Entry | Expected 2028)
-            </li>
-
-            <li>
-                <strong>Diploma in Information Technology</strong> – 
-                B S Patel Polytechnic, Ganpat University 
-                <br>CGPA: 7.87 / 10
-            </li>
-
-            <li>
-                <strong>Secondary School Certificate (SSC)</strong> – 
-                Sabari Vidya Vihar (58%)
-            </li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming:</strong> Python, C, C++, Java, PHP</li>
-            <li><strong>Web & Database:</strong> HTML, CSS, JavaScript, SQL</li>
-            <li><strong>Systems:</strong> Android Programming, Linux</li>
-            <li><strong>Core CS:</strong> Data Structures, OOP, System Fundamentals</li>
-            <li><strong>Data Science & AI Tools:</strong> Python (NumPy, Pandas, Matplotlib),
-                 basic statistical analysis, data visualization, and experience working with LLM-based systems</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Projects</h2>
-        <h3>Forest Cover & CO₂ Emissions Analysis – Data Science Project</h3>
-<p>
-Performed exploratory time-series analysis on multi-decade environmental data using Python.
-Applied normalization, moving averages, and correlation analysis to evaluate sustainability trends
-and identify spurious time-based relationships.
-</p>
-
-<p>
-🔗 <a href="https://github.com/classaxar/india-forest-co2-analysis.git" target="_blank">
-View Project on GitHub
-</a>
-</p>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Experience</h2>
-        <h3>Gujarat Vibrant Management – Gujarat Forest Department</h3>
-        <p>
-            Assisted in structured digital coordination, documentation workflows,
-            and operational data management in a government environment.
-        </p>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Certifications</h2>
-        <ul>
-            <li>IBM – Python for Data Science</li>
-            <li>NPTEL – Python for Data Science</li>
-            <li>Cisco – Data Science Essentials with Python</li>
-            <li>JP Morgan – Software Engineering Simulation</li>
-            <li>Android Development Training</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>Creative Work</h2>
-
-        <p>
-            Alongside my technical interests, I maintain a curated photography
-            portfolio focusing on nature, architecture, and urban environments.
-            Photography strengthens my visual observation skills and creative perspective.
-        </p>
-
-        <p>
-            📸 <a href="https://www.instagram.com/earthly_exposures_9408" target="_blank">
-            Instagram Photography Portfolio
-            </a>
-        </p>
-
-        <p>
-            🎞 <a href="https://vs.co/zjkhzjuk" target="_blank">
-            VSCO Portfolio
-            </a>
-        </p>
-
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Akshar Vishal Modi | All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
+    <!-- Custom Interactivity Scripts -->
+    <script src="script.js"></script>
 </body>
+
 </html>
