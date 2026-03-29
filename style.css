@@ -555,6 +555,11 @@ p {
     color: #fff;
 }
 
+.ongoing-badge {
+    background: #f59e0b; /* Amber */
+    color: #fff;
+}
+
 .project-card h3 {
     margin-bottom: 5px;
     font-size: 1.4rem;
