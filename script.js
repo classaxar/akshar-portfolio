@@ -12,10 +12,10 @@ window.addEventListener('scroll', () => {
 
 // 2. Typing Automation in Hero Section
 const phrases = [
-    "Machine Learning Engineer",
-    "Data Scientist",
-    "Backend Architect",
-    "AI Systems Enthusiast"
+    "Full-Stack Developer",
+    "Backend Engineer",
+    "Data Analyst",
+    "Gemini Student Ambassador"
 ];
 
 let i = 0;
