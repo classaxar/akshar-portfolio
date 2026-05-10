@@ -727,7 +727,30 @@ p {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 15, 28, 0.95);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        padding: 20px 0;
+        transform: translateY(-150%);
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition);
+        border-bottom: 1px solid var(--card-border);
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .hamburger {
@@ -741,6 +764,18 @@ p {
     .contact-methods {
         flex-direction: column;
         gap: 25px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .glass-card {
+        padding: 20px;
+    }
+
+    .hero {
+        padding-top: 100px;
     }
 }
 

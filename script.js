@@ -137,3 +137,36 @@ function closeModal() {
         modal.style.display = "none";
     }, 300);
 }
+
+// 5. Mobile Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinksDropdown = document.querySelector('.nav-links');
+const navItemsDropdown = document.querySelectorAll('.nav-links li a');
+
+if (hamburger && navLinksDropdown) {
+    hamburger.addEventListener('click', () => {
+        navLinksDropdown.classList.toggle('active');
+        const icon = hamburger.querySelector('i');
+        if (icon) {
+            if (navLinksDropdown.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Close menu when clicking a link
+    navItemsDropdown.forEach(item => {
+        item.addEventListener('click', () => {
+            navLinksDropdown.classList.remove('active');
+            const icon = hamburger.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+}
