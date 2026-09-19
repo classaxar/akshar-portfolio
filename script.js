@@ -109,28 +109,54 @@ const modalDownload = document.getElementById("modal-download");
 const modalVerify = document.getElementById("modal-verify");
 const closeBtn = document.querySelector(".modal-close");
 const certImages = document.querySelectorAll(".cert-img-wrapper img");
+const openModalBtns = document.querySelectorAll(".open-modal-btn");
 
-if (modal && modalImg && certImages) {
-    certImages.forEach(img => {
-        img.style.cursor = "pointer";
-        img.addEventListener("click", function () {
-            modal.style.display = "block";
-            setTimeout(() => modal.classList.add("show-modal"), 10);
+if (modal && modalImg) {
+    if (certImages) {
+        certImages.forEach(img => {
+            img.style.cursor = "pointer";
+            img.addEventListener("click", function () {
+                modal.style.display = "block";
+                setTimeout(() => modal.classList.add("show-modal"), 10);
 
-            modalImg.src = this.src;
-            modalDownload.href = this.src;
-            
-            if (modalVerify) {
-                const verifyUrl = this.getAttribute("data-verify-url");
-                if (verifyUrl) {
-                    modalVerify.href = verifyUrl;
-                    modalVerify.style.display = "inline-block";
-                } else {
-                    modalVerify.style.display = "none";
+                modalImg.src = this.src;
+                modalDownload.href = this.src;
+                
+                if (modalVerify) {
+                    const verifyUrl = this.getAttribute("data-verify-url");
+                    if (verifyUrl) {
+                        modalVerify.href = verifyUrl;
+                        modalVerify.style.display = "inline-block";
+                    } else {
+                        modalVerify.style.display = "none";
+                    }
                 }
-            }
+            });
         });
-    });
+    }
+
+    if (openModalBtns) {
+        openModalBtns.forEach(btn => {
+            btn.addEventListener("click", function (e) {
+                e.preventDefault();
+                modal.style.display = "block";
+                setTimeout(() => modal.classList.add("show-modal"), 10);
+
+                modalImg.src = this.href;
+                modalDownload.href = this.href;
+                
+                if (modalVerify) {
+                    const verifyUrl = this.getAttribute("data-verify-url");
+                    if (verifyUrl) {
+                        modalVerify.href = verifyUrl;
+                        modalVerify.style.display = "inline-block";
+                    } else {
+                        modalVerify.style.display = "none";
+                    }
+                }
+            });
+        });
+    }
 
     closeBtn.addEventListener("click", closeModal);
 
