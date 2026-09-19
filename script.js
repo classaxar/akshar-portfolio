@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-img");
 const modalDownload = document.getElementById("modal-download");
+const modalVerify = document.getElementById("modal-verify");
 const closeBtn = document.querySelector(".modal-close");
 const certImages = document.querySelectorAll(".cert-img-wrapper img");
 
@@ -118,6 +119,16 @@ if (modal && modalImg && certImages) {
 
             modalImg.src = this.src;
             modalDownload.href = this.src;
+            
+            if (modalVerify) {
+                const verifyUrl = this.getAttribute("data-verify-url");
+                if (verifyUrl) {
+                    modalVerify.href = verifyUrl;
+                    modalVerify.style.display = "inline-block";
+                } else {
+                    modalVerify.style.display = "none";
+                }
+            }
         });
     });
 
