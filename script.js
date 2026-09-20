@@ -15,7 +15,7 @@ const phrases = [
     "Full-Stack Developer",
     "Backend Engineer",
     "Data Analyst",
-    "Gemini Student Ambassador"
+    "Google Student Ambassador"
 ];
 
 let i = 0;
@@ -121,7 +121,7 @@ if (modal && modalImg) {
 
                 modalImg.src = this.src;
                 modalDownload.href = this.src;
-                
+
                 if (modalVerify) {
                     const verifyUrl = this.getAttribute("data-verify-url");
                     if (verifyUrl) {
@@ -144,7 +144,7 @@ if (modal && modalImg) {
 
                 modalImg.src = this.href;
                 modalDownload.href = this.href;
-                
+
                 if (modalVerify) {
                     const verifyUrl = this.getAttribute("data-verify-url");
                     if (verifyUrl) {
